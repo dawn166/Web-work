@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var arr=[1,2,3,3,4,'a','a','b','c'];
+
+            function reduce(arr){
+                var res=[];
+                
+                var obj = {};
+                for(var i = 0; i < arr.length; i++){
+                    if(!obj[arr[i]]){
+                        obj[arr[i]] = 1;
+                        res.push(arr[i]);
+                    }
+                }
+            return res;
+            }
+
+            console.log(reduce(arr));  //[1, 2, 3, 4, "a", "b", "c"]
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
